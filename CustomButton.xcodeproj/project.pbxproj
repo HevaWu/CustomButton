@@ -13,6 +13,7 @@
 		D53C541E27074879003E7C6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53C541C27074879003E7C6B /* Main.storyboard */; };
 		D53C54202707487D003E7C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53C541F2707487D003E7C6B /* Assets.xcassets */; };
 		D53C54232707487D003E7C6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53C54212707487D003E7C6B /* LaunchScreen.storyboard */; };
+		D53C542B270748D1003E7C6B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C542A270748D1003E7C6B /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D53C541F2707487D003E7C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53C54222707487D003E7C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53C54242707487D003E7C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53C542A270748D1003E7C6B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D53C541627074879003E7C6B /* AppDelegate.swift */,
 				D53C541827074879003E7C6B /* SceneDelegate.swift */,
 				D53C541A27074879003E7C6B /* ViewController.swift */,
+				D53C542A270748D1003E7C6B /* CustomButton.swift */,
 				D53C541C27074879003E7C6B /* Main.storyboard */,
 				D53C541F2707487D003E7C6B /* Assets.xcassets */,
 				D53C54212707487D003E7C6B /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53C542B270748D1003E7C6B /* CustomButton.swift in Sources */,
 				D53C541B27074879003E7C6B /* ViewController.swift in Sources */,
 				D53C541727074879003E7C6B /* AppDelegate.swift in Sources */,
 				D53C541927074879003E7C6B /* SceneDelegate.swift in Sources */,
@@ -217,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
