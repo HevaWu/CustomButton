@@ -20,7 +20,5 @@ class ViewController: UIViewController {
         testButton2.setTitle("Test Button 2", for: .normal)
         testButton2.customSubtitleText = "Button 2 subtitle Text Button 2 subtitle Text Button 2 subtitle Text Button 2 subtitle Text "
     }
-
-
 }
 

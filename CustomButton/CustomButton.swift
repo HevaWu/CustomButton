@@ -8,15 +8,15 @@
 import UIKit
 
 /*
-⫦-----------------------------⫣
-|  |                          |
-| 10                (Title)   |
-|  |                  |       |
-|-20- (image) -18-    8       |
-|  |                  |       |
-| 10                (Subtitle)|
-|  |                          |
-⟘_____________________________⟘
+⫦----------------------------------⫣
+|  |                               |
+| 10                (Title)        |
+|  |                  |            |
+|-20- (image) -18-    8            |
+|  |                  |            |
+| 10                (Subtitle) -20-|
+|  |                               |
+⟘__________________________________⟘
  */
 
 @IBDesignable
@@ -26,6 +26,7 @@ final class CustomButton: UIButton {
         label.textColor = .red
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
+        label.font = label.font.withSize(12)
         return label
     }()
     
@@ -34,8 +35,6 @@ final class CustomButton: UIButton {
         didSet {
             self.customSubtitleLabel.text = customSubtitleText
             customSubtitleLabel.isHidden = customSubtitleText.isEmpty
-            setNeedsLayout()
-            layoutIfNeeded()
         }
     }
     
@@ -54,7 +53,7 @@ final class CustomButton: UIButton {
             return rect
         } else {
             rect.origin.x = 102
-            rect.origin.y = (84 - (23 + customSubtitleLabel.systemLayoutSizeFitting(UIView.layoutFittingExpandedSize).height)) / 2
+            rect.origin.y = (84 - (23 + customSubtitleLabel.systemLayoutSizeFitting(CGSize(width: bounds.size.width - 102 - 20, height: bounds.size.height)).height)) / 2
             return rect
         }
     }
@@ -66,7 +65,7 @@ final class CustomButton: UIButton {
         customSubtitleLabel.frame.origin.y = titleRect(forContentRect: frame).maxY + 8
         customSubtitleLabel.frame.size = CGSize(
             width: frame.width - 10 - 102,
-            height: customSubtitleLabel.systemLayoutSizeFitting(UIView.layoutFittingExpandedSize).height
+            height: customSubtitleLabel.systemLayoutSizeFitting(CGSize(width: bounds.size.width - 102 - 20, height: bounds.size.height)).height
         )
         
         if !subviews.contains(customSubtitleLabel) {
