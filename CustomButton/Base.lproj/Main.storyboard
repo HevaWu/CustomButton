@@ -17,17 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbV-Zh-M8C" customClass="CustomButton" customModule="CustomButton" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbV-Zh-M8C" customClass="CustomButton" customModule="CustomButton" customModuleProvider="target">
                                 <rect key="frame" x="17" y="411" width="380" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="AyQ-bS-m7j"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="circle.hexagonpath.fill" catalog="system">
-                                    <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="circle.dashed.inset.filled" catalog="system">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="customSubtitleText" value="IBInspectable Subtitle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customSubtitleText" value="Inspectable Subtitle Subtitle Subtitle Subtitle"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujl-bg-4kq" userLabel="Button2" customClass="CustomButton" customModule="CustomButton" customModuleProvider="target">
@@ -36,7 +44,17 @@
                                     <constraint firstAttribute="height" constant="84" id="lWh-0w-7SB"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="circle.hexagonpath.fill" catalog="system">
+                                <state key="normal" title="Button" image="circle.dashed.inset.filled" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwF-eQ-mOd" userLabel="Button3" customClass="CustomButton" customModule="CustomButton" customModuleProvider="target">
+                                <rect key="frame" x="17" y="571" width="380" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="f0c-LT-5Xk"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="circle.dashed.inset.filled" catalog="system">
                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -44,11 +62,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UwF-eQ-mOd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="16Y-FI-Tcf"/>
                             <constraint firstItem="MbV-Zh-M8C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="C7F-c5-0cF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ujl-bg-4kq" secondAttribute="trailing" constant="17" id="DIp-Xk-Vnz"/>
                             <constraint firstItem="Ujl-bg-4kq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="MNb-gZ-68s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MbV-Zh-M8C" secondAttribute="trailing" constant="17" id="Nol-MN-syV"/>
                             <constraint firstItem="MbV-Zh-M8C" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cly-jU-5bm"/>
+                            <constraint firstItem="UwF-eQ-mOd" firstAttribute="top" secondItem="Ujl-bg-4kq" secondAttribute="bottom" id="mEf-Pv-gPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UwF-eQ-mOd" secondAttribute="trailing" constant="17" id="oyV-sh-vAe"/>
                             <constraint firstItem="MbV-Zh-M8C" firstAttribute="bottom" secondItem="Ujl-bg-4kq" secondAttribute="top" constant="8" symbolic="YES" id="xWB-b5-lMh"/>
                         </constraints>
                     </view>
@@ -64,14 +85,17 @@
     </scenes>
     <designables>
         <designable name="MbV-Zh-M8C">
-            <size key="intrinsicContentSize" width="74.5" height="22"/>
+            <size key="intrinsicContentSize" width="74" height="21.5"/>
         </designable>
         <designable name="Ujl-bg-4kq">
-            <size key="intrinsicContentSize" width="74.5" height="22"/>
+            <size key="intrinsicContentSize" width="74" height="22"/>
+        </designable>
+        <designable name="UwF-eQ-mOd">
+            <size key="intrinsicContentSize" width="74" height="22"/>
         </designable>
     </designables>
     <resources>
-        <image name="circle.hexagonpath.fill" catalog="system" width="128" height="112"/>
+        <image name="circle.dashed.inset.filled" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
